@@ -1,5 +1,10 @@
+#ifndef CHOCO_TIMER_HPP
+#define CHOCO_TIMER_HPP
+
+#include "SDL.h"
 #include "numeric_aliases.hpp"
 
+namespace choco {
 class timer
 {
     public:
@@ -55,3 +60,6 @@ class timer
     bool paused_ = false;
         bool started_ = false;
 };
+}
+
+#endif

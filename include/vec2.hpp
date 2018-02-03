@@ -3,7 +3,9 @@
 
 #include <utility>
 #include <algorithm>
+#include <iostream>
 
+namespace choco {
 template <class T>
 struct vec2 {
     T x = 0;
@@ -74,6 +76,6 @@ template <class T>
 std::ostream& operator<< (std::ostream& os, vec2<T> const& v) {
     os << v.x << ' ' << v.y << '\n';
 }
-
+}
 
 #endif
