@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for f in ase/*
+do
+  mkdir -p sheets json
+  file=$(basename $f)
+  aseprite -b $f --format json-array --data json/${file%.*}.json --sheet sheets/${file%.*}.png --list-tags
+done
